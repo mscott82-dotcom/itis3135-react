@@ -1,16 +1,6 @@
-
-export default function Introduction() {
+export default function Charlie() {
   return (
     <>
-
-      <style>{`
-        .center {
-          padding: 5px;
-          padding-left: 50px;
-          max-width: 50%;
-        }
-      `}</style>
-
       <main>
         <h2>Introduction</h2>
         <h2>Matthew Scott | Magnificent Sealion</h2>
@@ -61,7 +51,6 @@ export default function Introduction() {
           </ul>
         </div>
       </main>
-
     </>
   );
 }

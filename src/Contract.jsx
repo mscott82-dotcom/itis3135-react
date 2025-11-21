@@ -1,20 +1,9 @@
-export default function Contract() {
-  return (<>
+export default function Bravo() {
+  return (
+    <>
+      <h2>Contract</h2>
 
-    <Header />
-      <style>{`
-        p {
-          text-align: center;
-          padding: 5px;
-          padding-left: 75px;
-          padding-right: 75px;
-        }
-      `}</style>
-
-      <main>
-        <h2>Contract</h2>
-
-        <p className="contract">
+        <p h2assName="contract">
           I, Matthew Scott agree to abide by the terms of the course contract in my SEMESTER
           2025, FALL, ITIS3135-101 with my instructor, Professor D.I. von Briesen.
           <br /><br />
@@ -36,7 +25,6 @@ export default function Contract() {
           <br /><br />
           <i>Signed: Matthew Scott, 04/09/2025</i>
         </p>
-      </main>
     </>
   );
 }

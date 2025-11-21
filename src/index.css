@@ -1,68 +1,81 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+body {
+    background-color: #3E8914;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #E8FCCF
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/**MOBILE PHONE **/
+@media only screen and (min-width: 480px) {
+    main{
+        width: 80%;
+    }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+/**TABLET/IPAD **/
+@media only screen and (resolution: 300dpi) {
+    main{
+        width: 90%;
+    }
+
+}
+/**LAPTOP/DESKTOP **/
+@media only screen and (min-width: 992px) {
+    main{
+        width: 100%;
+    }
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+    color: #96E072
 }
+
 a:hover {
-  color: #535bf2;
+    color: #b2ff36;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+a:active {
+    color: rgb(165, 50, 50);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+main, h2 {
+    text-align: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+img {
+    max-width: 200px;
+    max-height: 200px;
 }
-button:hover {
-  border-color: #646cff;
+figure {
+    text-align: center;
+    font-style: italic;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+li, .contract {
+    text-align: left;
+}
+header {
+    border: 2px outset rgba(26, 219, 155, 0.25);
+    border-radius: 25px;
+    background-color:  rgba(128, 207, 181, 0.25);
+    padding: 15px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #134611;
+    padding-top: 5px;
+    
+
 }
+footer > nav, footer > a {
+    height: 5px;;
+}
+
