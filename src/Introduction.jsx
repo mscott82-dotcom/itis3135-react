@@ -1,4 +1,4 @@
-export default function Charlie() {
+export default function Introduction() {
   return (
     <>
       <main>

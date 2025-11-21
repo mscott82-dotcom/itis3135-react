@@ -1,4 +1,4 @@
-export default function Bravo() {
+export default function Contract() {
   return (
     <>
       <h2>Contract</h2>
