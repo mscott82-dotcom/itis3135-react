@@ -1,0 +1,81 @@
+body {
+    background-color: #3E8914;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #E8FCCF
+}
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/**MOBILE PHONE **/
+@media only screen and (min-width: 480px) {
+    main{
+        width: 80%;
+    }
+
+}
+/**TABLET/IPAD **/
+@media only screen and (resolution: 300dpi) {
+    main{
+        width: 90%;
+    }
+
+}
+/**LAPTOP/DESKTOP **/
+@media only screen and (min-width: 992px) {
+    main{
+        width: 100%;
+    }
+}
+
+a {
+    color: #96E072
+}
+
+a:hover {
+    color: #b2ff36;
+}
+
+a:active {
+    color: rgb(165, 50, 50);
+}
+
+main, h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+figure {
+    text-align: center;
+    font-style: italic;
+}
+li, .contract {
+    text-align: left;
+}
+header {
+    border: 2px outset rgba(26, 219, 155, 0.25);
+    border-radius: 25px;
+    background-color:  rgba(128, 207, 181, 0.25);
+    padding: 15px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #134611;
+    padding-top: 5px;
+    
+
+}
+footer > nav, footer > a {
+    height: 5px;;
+}
+
