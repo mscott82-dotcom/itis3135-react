@@ -1,3 +1,5 @@
+/* color palette sourced from coloors: */
+/* https://coolors.co/134611-3e8914-3da35d-96e072-e8fccf */
 body {
     background-color: #3E8914;
     text-align: center;
@@ -79,3 +81,7 @@ footer > nav, footer > a {
     height: 5px;;
 }
 
+
+.spacer {
+  border: 10px solid rgba(0, 0, 0, 0);
+}

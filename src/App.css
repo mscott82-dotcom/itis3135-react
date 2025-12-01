@@ -1,42 +1,87 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* color palette sourced from coloors: */
+/* https://coolors.co/134611-3e8914-3da35d-96e072-e8fccf */
+body {
+    background-color: #3E8914;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #E8FCCF
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+main {
+    max-width: 1920px;
+    margin: 0 auto;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+/**MOBILE PHONE **/
+@media only screen and (min-width: 480px) {
+    main{
+        width: 80%;
+    }
+
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/**TABLET/IPAD **/
+@media only screen and (resolution: 300dpi) {
+    main{
+        width: 90%;
+    }
+
+}
+/**LAPTOP/DESKTOP **/
+@media only screen and (min-width: 992px) {
+    main{
+        width: 100%;
+    }
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    color: #96E072
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+a:hover {
+    color: #b2ff36;
 }
 
-.card {
-  padding: 2em;
+a:active {
+    color: rgb(165, 50, 50);
 }
 
-.read-the-docs {
-  color: #888;
+main, h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+figure {
+    text-align: center;
+    font-style: italic;
+}
+li, .contract {
+    text-align: left;
+}
+header {
+    border: 2px outset rgba(26, 219, 155, 0.25);
+    border-radius: 25px;
+    background-color:  rgba(128, 207, 181, 0.25);
+    padding: 15px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #134611;
+    padding-top: 5px;
+    
+
+}
+footer > nav, footer > a {
+    height: 5px;;
+}
+
+
+.spacer {
+  border: 10px solid rgba(0, 0, 0, 0);
 }

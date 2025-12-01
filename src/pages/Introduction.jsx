@@ -6,7 +6,7 @@ export default function Introduction() {
         <h2>Matthew Scott | Magnificent Sealion</h2>
 
         <figure>
-          <img src="/images/img1.jpg" alt="Matthew_Scott" />
+          <img src="/images/imgselfie.jpg" alt="Matthew_Scott" />
           <figcaption>Matthew Scott</figcaption>
         </figure>
 

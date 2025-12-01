@@ -23,7 +23,7 @@ export default function StudentsPage() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Students</h1>
+      <h2>Students:</h2>
 
       <div
         style={{
@@ -47,16 +47,16 @@ export default function StudentsPage() {
                 borderRadius: "10px",
               }}
             >
-              {/* NAME */}
+              {/* name */}
               <h2>{fullName || "Unnamed Student"}</h2>
 
-              {/* BASIC FIELDS */}
+              {/* details */}
               <p><strong>Prefix:</strong> {s.prefix}</p>
               <p><strong>Mascot:</strong> {s.mascot}</p>
               <p><strong>Fun Fact:</strong> {s.funFact}</p>
               <p><strong>Additional:</strong> {s.additional}</p>
 
-              {/* LINKS */}
+              {/* links */}
               <h3>Links</h3>
               <ul>
                 {s.links &&
@@ -69,14 +69,14 @@ export default function StudentsPage() {
                   ))}
               </ul>
 
-              {/* BACKGROUNDS */}
+              {/* bckgrd */}
               <h3>Background</h3>
               <p><strong>Personal:</strong> {s.backgrounds.personal}</p>
               <p><strong>Professional:</strong> {s.backgrounds.professional}</p>
               <p><strong>Academic:</strong> {s.backgrounds.academic}</p>
               <p><strong>Subject:</strong> {s.backgrounds.subject}</p>
 
-              {/* COURSES */}
+              {/* course */}
               <h3>Courses</h3>
               <ul>
                 {s.courses?.map((course, idx) => (
@@ -88,7 +88,7 @@ export default function StudentsPage() {
                 ))}
               </ul>
 
-              {/* QUOTE */}
+              {/* quote */}
               {s.quote && (
                 <>
                   <h3>Quote</h3>
@@ -96,12 +96,12 @@ export default function StudentsPage() {
                 </>
               )}
 
-              {/* PLATFORM */}
+              {/* platform */}
               <h3>Platform</h3>
               <p><strong>Device:</strong> {s.platform.device}</p>
               <p><strong>OS:</strong> {s.platform.os}</p>
 
-              {/* MEDIA */}
+              {/* media */}
               {s.media && s.media.hasImage && (
                 <div>
                   <img
