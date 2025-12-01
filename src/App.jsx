@@ -1,19 +1,27 @@
-import "./App.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
+import Home from './pages/Home.jsx'
+import Introduction from './pages/Introduction.jsx'
+import Contract from './pages/Contract.jsx'
+import StudentsPage from "./pages/StudentsPage";
 
-function App() {
+
+
+
+import "./index.css";
+
+export default function App() {
   return (
-    <>
-
-      <h1> Matthew Scott's Magnificent Sealion ITIS 3135</h1>
-
-      <main>
-        <h2>Home</h2>
-        <p>Hello, you've made it to my Course Page</p>
-      </main>
-    </>
-  );
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/introduction" element={<Introduction />} />
+        <Route path="/contract" element={<Contract />} />
+        <Route path="/students" element={<StudentsPage />} />
+      </Routes>
+      <Footer />
+    </Router>
+  )
 }
-
-export default App;
